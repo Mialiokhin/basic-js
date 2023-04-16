@@ -1,4 +1,4 @@
-const { NotImplementedError } = require("../extensions/index.js");
+const {NotImplementedError} = require("../extensions/index.js");
 
 /**
  * Create name of dream team based on the names of its members
@@ -20,12 +20,12 @@ function createDreamTeam(members) {
     return false;
   }
   const filteredNames = members
-    .filter((name) => typeof name === "string")
-    .map((name) => name.trim());
+      .filter((name) => typeof name === "string")
+      .map((name) => name.trim());
   const nameDreamTeam = filteredNames
-    .map((name) => name[0].toUpperCase())
-    .sort()
-    .join("");
+      .map((name) => name[0].toUpperCase())
+      .sort()
+      .join("");
   return nameDreamTeam;
 }
 
